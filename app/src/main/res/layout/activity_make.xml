@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu.MakeActivity">
+
+    <TextView
+        android:id="@+id/categoryTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="카테고리"
+        android:textSize="25sp" />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/categoryTv"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/categoryTv"
+        android:layout_marginTop="30dp"
+        android:text="제목"
+        android:textSize="25sp" />
+
+    <EditText
+
+        android:id="@+id/titleEt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner"
+        android:layout_toRightOf="@+id/titleTv" />
+
+    <TextView
+        android:id="@+id/contentTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleTv"
+        android:layout_marginTop="30dp"
+        android:text="내용"
+        android:textSize="25sp" />
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:id="@+id/contentEt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleEt"
+        android:layout_toRightOf="@+id/contentTv" />
+
+    <TextView
+        android:id="@+id/chargeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contentTv"
+        android:layout_marginTop="30dp"
+        android:text="배달료"
+        android:textSize="25sp" />
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:id="@+id/chargeEt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contentEt"
+        android:layout_toRightOf="@+id/chargeTv" />
+
+    <TextView
+        android:id="@+id/deadlineTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chargeTv"
+        android:layout_marginTop="30dp"
+        android:text="마감시간"
+        android:textSize="25sp" />
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:id="@+id/deadlineEt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chargeEt"
+        android:layout_toRightOf="@+id/deadlineTv" />
+
+    <TextView
+        android:id="@+id/numberTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deadlineTv"
+        android:layout_marginTop="30dp"
+        android:text="모집인원"
+        android:textSize="25sp" />
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:id="@+id/numberEt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/deadlineEt"
+        android:layout_toRightOf="@+id/numberTv" />
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="등록"
+        android:id="@+id/makeBt"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:id="@+id/Tv"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+    <EditText
+        android:layout_marginTop="150dp"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameEt"
+        android:textSize="20sp"
+        android:hint="이름"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:layout_marginTop="200dp"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/idEt"
+        android:hint="아이디(이메일)"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:layout_marginTop="250dp"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/passEt"
+        android:inputType="textPassword"
+        android:hint="비밀번호"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:layout_marginTop="300dp"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/passChkEt"
+        android:inputType="textPassword"
+        android:hint="비밀번호 확인"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:layout_marginTop="350dp"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/addressEt"
+        android:hint="주소"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_toRightOf="@+id/idEt"
+        android:layout_marginTop="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id="@+id/joinBt"
+        android:text="회원가입"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
+    <CheckBox
+        android:layout_toRightOf="@+id/idEt"
+        android:layout_marginTop="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idChk"
+        android:text="중복확인"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+</RelativeLayout>

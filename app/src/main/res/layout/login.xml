@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_marginTop="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:id="@+id/Tv"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:textColor="#2196F3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:id="@+id/loginTv"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/passEt"/>
+
+    <TextView
+        android:textColor="#2196F3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디 / 비밀번호 찾기"
+        android:id="@+id/idPassTv"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/loginTv"/>
+
+    <EditText
+        android:layout_marginTop="150dp"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/idEt"
+        android:textSize="20sp"
+        android:hint="아이디"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:layout_marginTop="200dp"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/passEt"
+        android:inputType="textPassword"
+        android:hint="비밀번호"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_toRightOf="@+id/idEt"
+        android:layout_marginTop="150dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/loginBt"
+        android:text="로그인"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+</RelativeLayout>

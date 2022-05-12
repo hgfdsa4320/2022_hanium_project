@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--    캔버스-->
+    <com.jh6398.delivery.MyCanvas
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/canvas"/>
+
+
+    <ImageButton
+        android:layout_margin="20dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/profileBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profile" />
+
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="Choose \n Your Category "
+        android:textSize="30sp" />
+
+
+
+<!--      딜리버리-->
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:id="@+id/deliveryTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv"
+        android:layout_marginTop="50dp"
+        android:text="Delivery "
+        android:textSize="40sp" />
+
+    <ImageView
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/tv"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/deliveryTv"
+        android:src="@drawable/delivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/delivertImg"/>
+
+
+<!--    쿠팡-->
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:id="@+id/coupangTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deliveryTv"
+        android:layout_marginTop="50dp"
+        android:text="Coupang "
+        android:textSize="40sp" />
+
+    <ImageView
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/deliveryTv"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/deliveryTv"
+        android:src="@drawable/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/coupangImg"/>
+
+
+
+
+
+<!--    중고-->
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:id="@+id/usedTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/coupangTv"
+        android:layout_marginTop="50dp"
+        android:text="중고 "
+        android:textSize="40sp" />
+
+    <ImageView
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/coupangTv"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/usedTv"
+        android:src="@drawable/b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usedImg"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:id="@+id/bt"
+        android:background="@color/white"
+        android:drawableBottom="@drawable/sample"/>
+
+
+
+
+
+
+</RelativeLayout>

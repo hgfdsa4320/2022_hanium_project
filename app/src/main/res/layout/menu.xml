@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageButton
+        android:layout_margin="20dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/profileBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profile" />
+
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:id="@+id/tv"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="Choose \n Your Category "
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/delivery"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/tv"
+        android:background="@drawable/delivery1"/>
+
+    <RelativeLayout
+        android:id="@+id/coupang"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/delivery"
+        android:background="@drawable/coupang1"/>
+    <RelativeLayout
+        android:id="@+id/used"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/coupang"
+        android:background="@drawable/used"/>
+
+
+
+
+
+
+
+</RelativeLayout>
